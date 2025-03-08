@@ -4,9 +4,82 @@ body {
   margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
+  font-family: Tahoma, serif;
+  font-size: 16px;
 }
 
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  border-bottom: 3px solid #3b3b4f;
+  padding: 2rem 0;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  color: #ffffff;
+  min-height: 2em;
+}
 label {
   display: block;
-  margin: 0.5rem 0;
+  margin-top: 0.5rem 0;
+}
+
+.inline {
+  /* This will remove the earlier rule which set all 
+  the input elements to width: 100% */
+  width: unset;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+input,
+textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  /* min-height: 2em; */
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  font-size: 1.1rem;
+  height: 2em;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
 }
