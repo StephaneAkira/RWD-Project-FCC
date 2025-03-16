@@ -1,0 +1,165 @@
+/* Let's Start with CSS */
+
+/* CSS Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: coral;
+  font-family: Tahoma, serif;
+  font-size: 16px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+  gap: 3px;
+  color: white;
+}
+.header h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.survey-form {
+  background-color: #1b1b32;
+  border: 3px solid blue;
+  padding: 35px;
+
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  padding-bottom: 2em;
+}
+/* to make the label be at the Top and the
+ input  cause label are inline elements */
+label {
+  display: block;
+  margin-top: 0.5rem 0;
+}
+
+/* let's make the width of input , 
+textarea and select */
+input,
+textarea,
+select {
+  width: 100%;
+  min-height: 2em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: whitesmoke;
+  border: none;
+  padding: 5px;
+}
+
+textarea,
+input {
+  background-color: #0a0a23;
+  color: aliceblue;
+  border: 1px solid #0a0a23;
+}
+
+legend,
+label {
+  color: #fff;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: #fff;
+  color: coral;
+}
+
+#dropdown {
+  background-color: #0a0a23;
+  color: aliceblue;
+}
+
+fieldset {
+  border: none;
+  margin: 2rem 0;
+}
+
+/* selecting the first fieldset  */
+fieldset:nth-child(1) {
+  margin-top: 0;
+}
+/* Selecting the last fieldset */
+fieldset:nth-last-child() {
+  margin-bottom: 0;
+}
+
+/* to separete the legend with the 
+radio and checkboxes */
+legend {
+  margin-bottom: 10px;
+}
+
+.inline {
+  /* This will remove the earlier rule which set all 
+    the input elements to width: 100% */
+  /* it is especially usefull when working with checkboxes, radios
+    and will help label and the checkbox to be on the 
+    same line */
+  width: unset;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0.5em;
+  /* this will align them  */
+  vertical-align: middle;
+}
+
+.part-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part-5 button {
+  padding: 10px 50px;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: blue;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+article {
+  padding: 10px;
+}
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Note:
+* it's important to use label with the select element
+as its label
+also it's important to provide values for the option
+nested inside the Select element
+except the first option
+
+don't forget to link the label with the select element 
+by giving the for attribute the same value as the select
+element's value
+
+*/

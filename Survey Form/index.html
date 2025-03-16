@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">Survey Form From Akira</h1>
+      <p id="description">
+        This survey serves as exercise regarding Responsive Web Design. This
+        should help me get better with HTML and CSS for now
+      </p>
+    </div>
+    <form action="" id="survey-form" class="survey-form">
+      <fieldset class="part-1">
+        <article class="article-1">
+          <label for="name"> First Name </label>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Enter your first name"
+          />
+        </article>
+        <article class="article-2">
+          <label for="last-name"> Last Name</label>
+          <input
+            placeholder="Enter your last name"
+            required
+            id="last-name"
+            type="text"
+          />
+        </article>
+        <article class="article-3">
+          <label for="email"> Email</label>
+          <input
+            placeholder="Enter your email"
+            id="email"
+            required
+            type="email"
+          />
+        </article>
+        <article class="article-4">
+          <label for="number">Age (optional)</label>
+          <input
+            min="14"
+            max="100"
+            id="number"
+            type="number"
+            placeholder="Enter Age"
+          />
+        </article>
+      </fieldset>
+      <fieldset class="part-2">
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select name="dropdown" id="dropdown">
+          <option value="">Select Current Role</option>
+          <option value="1">Web Developer</option>
+          <option value="2">Higher Level SF6 Player</option>
+          <option value="3">Student</option>
+        </select>
+      </fieldset>
+      <fieldset class="part-3">
+        <article class="article-5">
+          <legend>Would you recommend FreeCodeCamp to a friend?</legend>
+          <!-- Best Practice for Checkboxes or radio is :
+           to nest them inside of the label , if U wanna have a chance to align them 
+           Horizontally -->
+          <label for="choice-1">
+            <input
+              class="inline"
+              type="radio"
+              name="choice"
+              id="choice-1"
+              value="choice-1"
+              checked
+            />
+            Definitely</label
+          >
+
+          <label for="choice-2">
+            <input
+              class="inline"
+              type="radio"
+              name="choice"
+              id="choice-2"
+              value="choice-2"
+            />
+            Maybe not</label
+          >
+        </article>
+        <article class="article-6">
+          <legend>Who do you wanna become? check all that apply</legend>
+          <label for="one">
+            <input class="inline" type="checkbox" id="one" value="one" />
+            Happier Than Now!
+          </label>
+
+          <label for="two">
+            <input class="inline" type="checkbox" value="two" id="two" />
+            A Mix of All my Potential
+          </label>
+          <label for="three">
+            <input class="inline" type="checkbox" value="three" id="three" />
+            Better than today's me
+          </label>
+        </article>
+      </fieldset>
+      <fieldset class="part-4">
+        <label for="comment"> Leave your comment here </label>
+        <textarea
+          rows="5"
+          cols="30"
+          name="comment"
+          id="comment"
+          placeholder="add your additional comments or observations here ..."
+        ></textarea>
+      </fieldset>
+      <fieldset class="part-5">
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+    <footer class="footer">Copyright &copy; Akira Corp</footer>
+  </body>
+</html>
