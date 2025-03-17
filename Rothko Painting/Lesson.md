@@ -72,3 +72,9 @@ with a blur (value) , it takes px
 this helps blur an element
 
 so far we have enough knwoledge to understand the box model and manipulate is as we wish
+
+we've also seen border-radius and its shorthand propery
+border-radius : helps us to round elements by either using px or % those are ones we have used so far
+
+its shorthand goes like this :
+top-left , top-right, bottom-right, bottom-left
