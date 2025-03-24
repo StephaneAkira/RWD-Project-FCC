@@ -110,7 +110,33 @@
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">css-questions</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="answers"
+                >Can the CSS margin property accept negative values?</label
+              >
+            </div>
+            <div class="answer">
+              <select name="answers" id="answers" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="comment">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea
+                name="comment"
+                id="comment"
+                cols="10"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
         </section>
+        <button type="submit">Send</button>
       </form>
     </main>
   </body>
