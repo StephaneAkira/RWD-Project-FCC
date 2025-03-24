@@ -1,0 +1,32 @@
+/* Accessibility is making your webpage easy for all people to use – even people with disabilities.
+
+In this course, you'll build a quiz webpage. You'll learn accessibility tools such as keyboard shortcuts, ARIA attributes, and design best practices. */
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+}
+h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+}
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+}
+#logo {
+  width: max(10rem, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
