@@ -12,7 +12,9 @@
   width: 500px;
   height: 600px;
   background-color: #4d0f00;
-  /* padding: 1px;  were replacing this with overflow:hidden*/
+  /* padding: 1px;  
+  were replacing this with overflow:hidden*/
+  /* overflow hidden helps to contain all the content inside the container NMW */
   overflow: hidden;
   filter: blur(2px);
 }

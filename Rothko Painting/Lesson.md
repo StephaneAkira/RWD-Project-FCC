@@ -42,7 +42,7 @@ top and bottom , left-right
 
 # if we use 3 values it becomes
 
-top , left and rigt , bottom
+top , left and right , bottom
 
 # Note:
 
