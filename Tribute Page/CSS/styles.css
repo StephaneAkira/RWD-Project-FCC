@@ -1,0 +1,88 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+strong {
+  font-weight: bold;
+}
+#main {
+  margin: 25px 5px;
+  width: calc(98vw - 2vw);
+  height: 94vw;
+  background-color: lightgray;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 100px;
+  border-radius: 15px;
+  /* overflow: hidden; */
+  justify-content: center;
+  align-items: center;
+}
+
+#main p {
+  padding-left: 50px;
+}
+#title {
+  font-family: Tahoma, serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1s5px;
+}
+
+#img-div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#tribute-info {
+  margin-bottom: 10px;
+}
+
+#tribute-info h2 {
+  font-weight: bold;
+  font-family: Tahoma, serif;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#tribute-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+/* Note :
+This Project has no Media Querries so i won't be able to fit all screen sizes as i wish i could 
+a least not , an update reagrding it will come up soon enough */
