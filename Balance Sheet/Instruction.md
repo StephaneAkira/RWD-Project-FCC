@@ -45,3 +45,29 @@ Following that, add three td elements with the following text (in order): $500, 
 - In your fourth tr element, add a th element with the text Total Assets. Wrap the text Assets in a span element with the class attribute set to sr-only.
 
 Following that, add three td elements with the following text (in order): $579, $736, $809. Give the third td element a class attribute set to current.
+
+- Time to move on to your second table. Start by giving it a caption element set to Liabilities. Then add your thead and tbody.
+
+- Within your thead, add a tr. Inside that, add a td and three th elements.Within your thead, add a tr. Inside that, add a td and three th elements.
+
+- Give each th element a span element with the class set to sr-only and the following text, in order: 2019, 2020, and 2021.
+
+- Within the tbody element, add four tr elements. Give the first three the class attribute set to data, and the fourth the class attribute set to total.
+
+- Within the first tr, add a th element with the text Loans The outstanding balance on our startup loan.. Wrap that text, except for Loans , within a span element with the class set to description.
+
+Add three td elements below that, and give them the following text, in order: $500, $250, and $0. Give the third td element a class set to current.
+
+- Within the second tr, add a th element with the text Expenses Annual anticipated expenses, such as payroll.. Wrap that text, except for Expenses , within a span element with the class set to description.
+
+Add three td elements below that, and give them the following text, in order: $200, $300, and $400. Give the third td element a class set to current.
+
+- Within the third tr, add a th element with the text Credit The outstanding balance on our credit card.. Wrap that text, except for Credit , within a span element with the class set to description.
+
+Add three td elements below that, and give them the following text, in order: $50, $50, and $75. Give the third td element a class set to current.
+
+- In your fourth tr element, add a th element with the text Total Liabilities. Wrap the text Liabilities in a span element with the class attribute set to sr-only.
+
+Following that, add three td elements with the following text (in order): $750, $600, $475. Give the third td element a class attribute set to current.
+
+- For your third table, add a caption with the text Net Worth, and set up a table header and table body.
