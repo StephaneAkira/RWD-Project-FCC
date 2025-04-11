@@ -206,6 +206,69 @@ If no gradientDirection argument is provided to the linear-gradient function,
 it arranges colors from top to bottom, or along a 180 degree line,
 by default.
 
+# Gradients In depth Guide
+
+we use gradient with the background property
+
+we need at least two colors for the gradient to work
+
+# Linear Gradient
+
+- background: linear-gradient(teal,purple)
+
+- we can change directions by specifying at the beginning before the colors like so:
+
+background: linear-gradient(to bottom or 123deg, teal,purple)
+
+- we can control the size of the colors , we call it color-stop, we can specify % after a color we have a starting and a closing % , we need both
+  like so :
+
+background: linear-gradient(teal 0% 10%,purple 40% 100%)
+
+# Radial Gradient
+
+it radiates outward from an origine
+of a form of a circle but often elipse
+
+background: radial-gradient(teal,purple)
+
+- we can make he origine a circle rather than an elipse,
+  by specifying circle before the colors.
+
+  note that we can soecify color-stop just like with liner-gradient
+  like so :
+
+background: raial-gradient(circle , teal,purple)
+
+- we can also position the origine
+  by specifying the circle or whatever we want thenn at choose a postion we want that to be
+  like so:
+
+background: radial-gradient(circle at top , teal,purple)
+
+# Conic Gradient
+
+it's nice looking
+use at least 2 colors , but use 8 for good looking points
+
+in a conic gradient, colors rotate around some central point
+
+- we can change the color-stop just like any other gradient, we can position them etc... just like the rest of them
+
+# repeating gradient:
+
+we have repeating versions of gradients, linear, conic or radial
+
+let's see some example
+
+let's set color-stop values with px
+
+- background: repeating-linear-gradient(teal 50px,purple 50px 100px, teal 100px 150px)
+
+- background: repeating-radial-gradient(teal 50px,purple 50px 100px, teal 100px 150px)
+
+- background: repeating-conic-gradient(teal 50px,purple 50px 100px, teal 100px 150px)
+
 # Opacity:
 
 With the CSS opacity property, you can control how opaque or transparent
