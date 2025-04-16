@@ -11,7 +11,6 @@
 }
 
 * {
-  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -51,6 +50,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.sky {
+  background: radial-gradient(
+    circle closest-corner at 15% 15%,
+    #ffcf33 0%,
+    #ffcf33 20%,
+    #ffff66 21%,
+    #bbeeff 100%
+  );
 }
 /* Utility classes end */
 
@@ -223,6 +232,24 @@ body {
   left: 10%;
   width: 8%;
   height: 45%;
+}
+
+.fb4-window {
+  width: 30%;
+  height: 10%;
+  border-radius: 50%;
+  margin: 10%;
+  background-color: var(--window-color1);
+}
+.fb4a {
+  border-top: 5vh solid transparent;
+  border-left: 8vw solid var(--building-color1);
+}
+.fb4b {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 89%;
   background-color: var(--building-color1);
 }
 .fb5 {
@@ -230,10 +257,57 @@ body {
   right: 10%;
   width: 10%;
   height: 33%;
-  background-color: var(--building-color2);
+  background: repeating-linear-gradient(
+      var(--building-color2) 0%,
+      var(--building-color2) 5%,
+      transparent 5%,
+      transparent 10%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--building-color2) 0%,
+      var(--building-color2) 12%,
+      var(--window-color2) 12%,
+      var(--window-color2) 44%
+    );
 }
 .fb6 {
   width: 9%;
   height: 38%;
-  background-color: var(--building-color3);
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3) 0%,
+      var(--building-color3) 10%,
+      transparent 10%,
+      transparent 30%
+    ),
+    repeating-linear-gradient(
+      var(--building-color3) 0%,
+      var(--building-color3) 10%,
+      var(--window-color3) 10%,
+      var(--window-color3) 30%
+    );
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+    --window-color1: #777;
+    --window-color2: #777;
+    --window-color3: #777;
+    --window-color4: #777;
+  }
+
+  .sky {
+    background: radial-gradient(
+      circle closest-corner at 15% 15%,
+      #ccc 0%,
+      #ccc 20%,
+      #445 21%,
+      #223 100%
+    );
+  }
 }

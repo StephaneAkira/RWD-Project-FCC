@@ -337,3 +337,78 @@ Add a repeating-linear-gradient to .fb1c with a 90deg angle, your --building-col
 
 - Step 96
   Only three more buildings to go. Nest two new div elements within the .fb4 element and give them the classes of fb4a and fb4b, in that order. Remember that you sort of flipped the location of .fb4 and .fb5, so it's the rightmost purple building you are working on now.
+
+- Step 97
+  Give .fb4b a width of 100% and height of 89%.
+
+- Step 98
+  Add your --building-color1 variable as value of the background-color property of .fb4b. Then, remove the background-color from .fb4.
+
+- Step 99
+  Nest six div elements within .fb4b and give them all a class of fb4-window.
+
+- Step 100
+  Give the .fb4-window elements a width of 30%, height of 10%, and border-radius of 50%. These will make some circular windows for this building.
+
+- Step 101
+  Fill in the windows with your secondary color for this building. Also add a margin of 10% to give the windows some space.
+
+- Step 102
+  The windows are stacked on top of each other on the rightmost purple building. Turn the building into a flexbox parent, and use the flex-wrap property to put the windows side by side, and push them down to a new row when they don't fit.
+
+- Step 103
+  This building is going to have another triangle on top. Give the top section a border-top of 5vh solid transparent, and a border-left that is 8vw, solid, and uses your building color variable as the color.
+
+- Step 104
+  On to the next building! It's the green one in the foreground. Give it a repeating-linear-gradient with your building color from 0% to 5%, and transparent from 5% to 10%.
+
+- Step 105
+  Add another repeating-linear-gradient below the one you just added. Give it a 90deg direction, use your building color from 0% to 12% and window color 12% to 44%. This will make a bunch of rectangle windows.
+
+- Step 106
+  You don't need the background-color for this building anymore so you can remove that property.
+
+- Step 107
+  Finally! You made it to the last building! Add a repeating gradient to it with a 90deg direction. Use the building color from 0% to 10% and transparent from 10% to 30%.
+
+- Step 108
+  Add another repeating gradient to this building; make it the same as the one you just added, except don't add the 90deg direction and use your window color instead of the two transparent colors.
+
+- Step 109
+  You can remove the background-color for this building now, since it isn't needed.
+
+- Step 110
+  Okay, the buildings are done. Go back to the \* selector and remove the border you applied to everything at the beginning and the buildings will come together.
+
+- Step 111
+  Add sky as a second class to the .background-buildings element. You are going to make a background for the skyline.
+
+- Step 112
+  Give the sky class a radial-gradient. Use #ffcf33 from 0% to 20%, #ffff66 at 21%, and #bbeeff at 100%. This will add circular gradient to the background that will be your sun.
+
+- Step 113
+  At the top of the sky gradient color list, where you would put a direction for the gradient; add circle closest-corner at 15% 15%,. This will move the start of the gradient to 15% from the top and left. It will make it end at the closest-corner and it will maintain a circle shape. These are some keywords built into gradients to describe how it behaves.
+
+- Step 114
+  A media query can be used to change styles based on certain conditions, and they look like this:
+
+  Example Code
+  @media (condition) {
+  }
+  Add an empty media query at the bottom of your stylesheet with a condition of max-width: 1000px. Styles added in here will take effect when the document size is 1000px wide or less.
+
+- Step 115
+  Copy and paste your whole sky class along with all of its properties and values into the media query. You are going to make another color scheme for the skyline that changes it from day to night.
+
+  Note: You are going to need to scroll past the editable region to copy the class.
+
+- Step 116
+  In the sky class of the media query, change the two #ffcf33 color values to #ccc, the #ffff66 to #445, and the #bbeeff to #223. Then you can resize your window to see the background change colors.
+
+- Step 117
+  Add a :root selector to the top of your media query. Then redefine all four of the --building-color variables to use the value #000 there.
+
+- Step 118
+  Lastly, in the :root selector of the media query, redefine all four of the --window-color variables to use #777. When you're done, resize the window and watch it go from day to night.
+
+Variables are primarily used with colors, and that's how you used them here. But they can be given any value and used on any property. Your project looks great!
