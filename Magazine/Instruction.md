@@ -130,3 +130,25 @@ V6 - 2018: We launched 6 new certifications to replace our old ones. This was th
   To start your CSS, normalize the CSS rules by targeting all elements with \*, including the ::before and ::after pseudo-selectors.
 
 Set the padding and margin properties both to 0 and set the box-sizing property to border-box.
+
+- Step 27
+  Create an html selector and give it a font-size property set to 62.5%. This will set the default font size for your web page to 10px (the browser default is 16px).
+
+This will make it easier for you to work with rem units later, as 2rem would be 20px.
+
+- Step 28
+  Create a body selector. Set the font-family property to Baskervville, with a fallback of serif. Set the color property to linen and the background-color property to rgb(20, 30, 40).
+
+- Step 29
+  Create an h1 selector, and set the font-family property to Anton with the fallback of sans-serif.
+
+- Step 30
+  Create an h2, h3, h4, h5, h6 selector. Give it a font-family property set to Raleway with a fallback of sans-serif.
+
+- Step 31
+  Create an a selector, and give it a text-decoration property set to none and a color property set to linen.
+
+- Step 32
+  Now you are ready to start putting together the grid layout. CSS Grid offers a two-dimensional grid-based layout, allowing you to center items horizontally and vertically while still retaining control to do things like overlap elements.
+
+Begin by creating a main selector and giving it a display property set to grid.
